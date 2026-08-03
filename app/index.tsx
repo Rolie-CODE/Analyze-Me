@@ -6,7 +6,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 export default function HomeScreen() {
   return (
     <View style= {{backgroundColor: "white",flex:1}}>
-        <View style = {{marginLeft: 10, display:'flex', flexDirection:"row", gap: 60, marginRight:10, marginTop: 50}}>
+        <View style = {{marginLeft: 10, display:'flex', flexDirection:"row", gap: 60, marginRight:10, marginTop: 20}}>
 
             <View style = {{display:'flex', flexDirection:"row", gap: 53, alignItems: 'center'}}>
                 <FontAwesome5 name="brain" size={24} color="#14B8A6" />
@@ -50,9 +50,84 @@ export default function HomeScreen() {
                 </View>
             </View>
 
+            <View style = {{display:'flex', flexDirection:'row', gap:60, marginLeft:20}}>
+                
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        1. Age
+                    </Text>
+                </View>
+
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        2. Gender
+                    </Text>
+                </View>
+            </View>
+
+            <View style = {{display:'flex', flexDirection:'row', gap:60, marginLeft:20}}>
+                
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        1. Age
+                    </Text>
+                </View>
+
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        2. Gender
+                    </Text>
+                </View>
+            </View>
+
+            <View style = {{display:'flex', flexDirection:'row', gap:60, marginLeft:20}}>
+                
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        1. Age
+                    </Text>
+                </View>
+
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        2. Gender
+                    </Text>
+                </View>
+            </View>
+
+            <View style = {{display:'flex', flexDirection:'row', gap:60, marginLeft:20}}>
+                
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        1. Age
+                    </Text>
+                </View>
+
+                <View style = {{display:'flex', flexDirection:'row', width: 150, borderColor: "black", borderWidth: 1, height: 50}}>
+                    <Feather name="calendar" size={24} color="#14B8A6" />
+                    <Text>
+                        2. Gender
+                    </Text>
+                </View>
+            </View>
 
             <View>
+                <Text>
+                    Current CGPA
+                </Text>
+            </View>
 
+            <View>
+                <Button
+                title='Analyze my result'
+                color={"green"}/>
             </View>
         </View>
     </View>
