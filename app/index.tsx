@@ -415,7 +415,7 @@ export default function HomeScreen() {
           </View>
 
           <View
-            style={{ backgroundColor: "green", width: 380, marginLeft: 14 }}
+            style={{ backgroundColor: "green", width: 380, marginLeft: 14, marginTop: 20 }}
           >
             <TouchableOpacity
               style={{
@@ -438,7 +438,7 @@ export default function HomeScreen() {
               </Text>
             </TouchableOpacity>
           </View>
-          <View style={{ alignItems: "center", width: 380 }}>
+          <View style={{ alignItems: "center", width: 380, marginTop: 20 }}>
             <View
               style={{
                 display: "flex",
