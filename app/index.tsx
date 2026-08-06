@@ -117,13 +117,11 @@ export default function HomeScreen() {
                 <Text>1. Age</Text>
               </View>
 
-              <TouchableOpacity onPress={() => setshowdropdown(!showDropdown)}>
+              <TouchableOpacity>
                 <TextInput
-                placeholder="21"
-                placeholderTextColor={"black"}
+                  placeholder="21"
+                  placeholderTextColor={"black"}
                   style={{
-                    position: "relative",
-                    zIndex: showDropdown ? 1000 : 1,
                     width: width * 0.4,
                     borderWidth: 0.5,
                     borderColor: "#14B8A6",
@@ -134,29 +132,53 @@ export default function HomeScreen() {
                     flexDirection: "row",
                     justifyContent: "space-between",
                   }}
-                >
-                  
-                  
-
-                  
-                </TextInput>
+                ></TextInput>
               </TouchableOpacity>
             </View>
 
             <View
               style={{
+                alignItems: "center",
+                justifyContent: "center",
                 display: "flex",
-                flexDirection: "row",
-                width: width * 0.44,
-                borderColor: "#14B8A6",
-                borderWidth: 0.5,
-                height: 50,
+                flexDirection: "column",
                 gap: 8,
+                width: width * 0.44,
+                borderWidth: 0.5,
+                borderColor: "#14B8A6",
+                height: 85,
                 borderRadius: 5,
+                paddingLeft: 10,
+                paddingTop: 10,
               }}
             >
-              <FontAwesome name="male" size={24} color="#14B8A6" />
-              <Text>2. Gender</Text>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: width * 0.44,
+                  gap: 5,
+                  alignItems: "center",
+                }}
+              >
+                <FontAwesome name="male" size={24} color="#14B8A6" />
+                <Text>2. Gender</Text>
+              </View>
+
+              <TouchableOpacity>
+                <TextInput
+                  placeholder="Male"
+                  style={{
+                    borderWidth: 0.5,
+                    borderColor: "#14B8A6",
+                    width: width * 0.4,
+                    height: 30,
+                    paddingLeft: 10,
+                    marginRight: 10,
+                    marginBottom: 7,
+                  }}
+                />
+              </TouchableOpacity>
             </View>
           </View>
 
@@ -176,7 +198,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -192,7 +214,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -222,7 +244,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -238,7 +260,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -264,7 +286,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -282,7 +304,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -312,7 +334,7 @@ export default function HomeScreen() {
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
+                height: 85,
                 gap: 8,
                 borderRadius: 5,
               }}
@@ -320,25 +342,52 @@ export default function HomeScreen() {
               <FontAwesome name="money" size={24} color="#14B8A6" />
               <Text style={{ width: 150 }}>9. Financial Stress</Text>
             </View>
-
             <View
               style={{
+                justifyContent: "center",
+                alignItems: "center",
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
+                gap: 8,
                 width: width * 0.44,
                 borderColor: "#14B8A6",
                 borderWidth: 0.5,
-                height: 50,
-                gap: 8,
+                height: 85,
                 borderRadius: 5,
+                paddingLeft: 10,
+                paddingTop: 10,
               }}
             >
-              <MaterialCommunityIcons
-                name="hours-12"
-                size={24}
-                color="#14B8A6"
-              />
-              <Text style={{ width: 150 }}>10. Study hours per day</Text>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: width * 0.44,
+                  gap: 5,
+                }}
+              >
+                <MaterialCommunityIcons
+                  name="hours-12"
+                  size={24}
+                  color="#14B8A6"
+                />
+                <Text style={{ width: 150 }}>10. Study hours per day</Text>
+              </View>
+
+              <TouchableOpacity>
+                <TextInput
+                  placeholder="Enter your study hours"
+                  style={{
+                    borderWidth: 0.5,
+                    borderColor: "#14B8A6",
+                    width: width * 0.4,
+                    height: 30,
+                    paddingLeft: 10,
+                    marginRight: 10,
+                    marginBottom: 7,
+                  }}
+                />
+              </TouchableOpacity>
             </View>
           </View>
 
