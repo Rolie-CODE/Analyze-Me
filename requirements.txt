@@ -1,0 +1,4 @@
+npm install expo
+npm install expo-router
+npm install react-native
+npm install @expo/vector-icons
