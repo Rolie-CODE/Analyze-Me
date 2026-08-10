@@ -40,7 +40,7 @@ export default function HomeScreen() {
 
           <Text style = {{color: 'black'}}>
             12
-          </Text>
+          </Text> 
 
           <Text style = {{color: 'black'}}>
             all time
@@ -70,10 +70,10 @@ export default function HomeScreen() {
 
         <View>
           <View >
-            <TouchableOpacity style = {{display: 'flex', flexDirection: 'row', gap: 20}}>
-              <FontAwesome5 name="brain" size={24} color="black" style = {{ borderWidth: 0.5}}/>
-              <View>
-                <Text style = {{color: 'black', display: 'flex', flexDirection: 'column'}}>
+            <TouchableOpacity style = {{display: 'flex', flexDirection: 'row', gap: 20, borderWidth: 0.5}}>
+              <FontAwesome5 name="brain" size={24} color="black"/>
+              <View style = {{ display: 'flex', flexDirection: 'column'}}>
+                <Text style = {{color: 'black'}}>
                   Depression risk
                 </Text>
                 <Text style = {{color: 'black'}}>
@@ -84,31 +84,35 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        <View>
-          <View>
+        <View style = {{alignItems: 'center'}}>
+          <TouchableOpacity style={{display: 'flex', flexDirection: 'row', gap: 20, borderWidth: 0.5}}>
             <FontAwesome name="money" size={24} color="black" />
-            <Text style = {{color: 'black'}}>
-              Loan egibility
-            </Text>
-            <Text style = {{color: 'black'}}>
-              Income, credit and history
-            </Text>
-          </View>
+            <View style = {{ display: 'flex', flexDirection: 'column'}}>
+              <Text style = {{color: 'black'}}>
+                Loan egibility
+              </Text>
+              <Text style = {{color: 'black'}}>
+                Income, credit and history
+              </Text>
+            </View>
+          </TouchableOpacity>
         </View>
 
-        <View>
-          <View>
+        <View style = {{alignItems: 'center'}}>
+          <TouchableOpacity style={{display: 'flex', flexDirection: 'row', gap: 20, borderWidth: 0.5}}>
             <Ionicons name="stats-chart-outline" size={24} color="black" />
-            <Text style = {{color: 'black'}}>
-              More Coming
+            <View>
+              <Text style = {{color: 'black'}}>
+                More Coming
+              </Text>
+              <Text style = {{color: 'black'}}>
+                New Modules in development
+              </Text>
+            </View>
+            <Text style = {{paddingLeft: 95, paddingTop: 8}}>
+              Soon.....
             </Text>
-            <Text style = {{color: 'black'}}>
-              New Modules in development
-            </Text>
-            <Text>
-              Soonnp
-            </Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
