@@ -4,6 +4,7 @@ import EvilIcons from '@expo/vector-icons/EvilIcons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import {Link} from 'expo-router'
 
 
 export default function HomeScreen() {
@@ -70,17 +71,19 @@ export default function HomeScreen() {
 
         <View>
           <View >
-            <TouchableOpacity style = {{display: 'flex', flexDirection: 'row', gap: 20, borderWidth: 0.5}}>
-              <FontAwesome5 name="brain" size={24} color="black"/>
-              <View style = {{ display: 'flex', flexDirection: 'column'}}>
-                <Text style = {{color: 'black'}}>
-                  Depression risk
-                </Text>
-                <Text style = {{color: 'black'}}>
-                  Sleep, stress and lifestyle
-                </Text>
-              </View>
-            </TouchableOpacity>
+            <Link href="/depression_screen" asChild>
+              <TouchableOpacity style = {{display: 'flex', flexDirection: 'row', gap: 20, borderWidth: 0.5}}>
+                <FontAwesome5 name="brain" size={24} color="black"/>
+                <View style = {{ display: 'flex', flexDirection: 'column'}}>
+                  <Text style = {{color: 'black'}}>
+                    Depression risk
+                  </Text>
+                  <Text style = {{color: 'black'}}>
+                    Sleep, stress and lifestyle
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </Link>
           </View>
         </View>
 
@@ -95,6 +98,9 @@ export default function HomeScreen() {
                 Income, credit and history
               </Text>
             </View>
+            <Text style = {{paddingLeft: 149, paddingTop: 8}}>
+              Go
+            </Text>
           </TouchableOpacity>
         </View>
 
