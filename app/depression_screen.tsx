@@ -233,7 +233,7 @@ export default function HomeScreen() {
           <View
             style={{
               margin: 10,
-              marginTop: 20,
+              marginTop: 30,
               padding: 15,
               borderWidth: 1,
               borderColor: result.prediction === 1 ? "#ef4444" : "#22c55e",
@@ -271,7 +271,7 @@ export default function HomeScreen() {
           style={{
             backgroundColor: loading ? "#aaa" : "green",
             marginHorizontal: 14,
-            marginTop: 20,
+            marginTop: 200,
             height: 45,
             borderRadius: 5,
             alignItems: "center",
